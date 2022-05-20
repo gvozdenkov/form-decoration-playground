@@ -1,0 +1,96 @@
+:root {
+  --blue-acent-color: rgb(27, 113, 204);
+}
+
+.form-01 {
+  max-width: 400px;
+  max-height: 600px;
+  border-radius: 15px;
+  box-shadow: 0 0 50px 10px rgb(0, 0, 0);
+  padding: 40px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  background-color: white;
+  color: black;
+}
+
+.form-01__title {
+  text-align: left;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+
+.form-01__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.form-01__fieldset:last-child {
+  margin-bottom: 0;
+}
+
+.form-01__input {
+  box-sizing: border-box;
+  border: 1px solid rgb(165, 165, 165);
+  padding: 20px;
+  border-radius: 30px;
+  width: 100%;
+}
+
+.form-01__input[type="checkbox"] {
+  width: initial;
+  min-width: 20px;
+  min-height: 20px;
+  vertical-align: middle;
+}
+
+.form-01__input::placeholder {
+  color: rgb(204, 204, 204);
+  font-size: 16px;
+}
+
+.form-01__input:focus {
+  outline: var(--blue-acent-color) solid 1px;
+  box-shadow: inset 0 0 10px 0 rgba(27, 113, 204, 0.1);
+}
+
+.form-01__label {
+  font-weight: 500;
+  font-size: 14px;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.form-01__label:first-child {
+  margin-top: 0;
+}
+
+.form-01__label_type_inline {
+  display: inline;
+  padding-left: 7px;
+}
+
+.form-01__button {
+  background-color: var(--blue-acent-color);
+  color: white;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 100px;
+  min-width: 120px;
+  min-height: 50px;
+}
+
+.form-01__button:focus {
+  outline: var(--blue-acent-color) solid 1px;
+  background-color: transparent;
+  color: var(--blue-acent-color);
+}
+
+.form-01__button_type_nofill {
+  background-color: transparent;
+  color: var(--blue-acent-color);
+}

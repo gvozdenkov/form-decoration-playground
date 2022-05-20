@@ -21,17 +21,51 @@
   </head>
   <body class="body">
     <div class="page">
-        <header class="header">
-            <h1 class="header__title">I test form's decoration here</h1>
-        </header>
-        <main class="main">
-            <section class="form-01">
-
-            </section>
-        </main>
-        <footer class="footer">
-            <p class="footer__copyright">Arty Gvozdenkov 2022</p>
-        </footer>
+      <header class="header">
+        <h1 class="header__title">Form Playground</h1>
+      </header>
+      <main class="main">
+        <section class="section_01">
+          <form action="" class="form-01">
+            <h2 class="form-01__title">Log in</h2>
+            <fieldset class="form-01__fieldset">
+              <label for="username" class="form-01__label">User name</label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                class="form-01__input"
+                placeholder="Type your username"
+                required
+                minlength="2"
+                maxlength="25"
+              />
+              <label for="password" class="form-01__label">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="form-01__input"
+                placeholder="Type your password"
+                required
+              />
+            </fieldset>
+            <fieldset class="form-01__fieldset">
+              <input
+                type="checkbox"
+                name="remember-me"
+                id="remember-me"
+                class="form-01__input"
+              />
+              <label for="remember-me" class="form-01__label form-01__label_type_inline">Remember me</label>
+            </fieldset>
+            <fieldset class="form-01__fieldset">
+              <button type="submit" class="form-01__button">Log in</button>
+              <button type="reset" class="form-01__button form-01__button_type_nofill">Reset</button>
+            </fieldset>
+          </form>
+        </section>
+      </main>
     </div>
   </body>
 </html>
