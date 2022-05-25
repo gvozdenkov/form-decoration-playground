@@ -26,16 +26,16 @@
       </header>
       <main class="main">
         <section class="section_01">
-          <form action="" class="form-01">
+          <form action="" class="form-01" name="form01" novalidate>
             <h2 class="form-01__title">Log in</h2>
             <fieldset class="form-01__fieldset">
-              <label for="username" class="form-01__label">User name</label>
+              <label for="username" class="form-01__label">Mail</label>
               <input
-                type="text"
-                name="username"
-                id="username"
+                type="email"
+                name="usermail"
+                id="usermail"
                 class="form-01__input"
-                placeholder="Type your username"
+                placeholder="Type your email"
                 required
                 minlength="2"
                 maxlength="25"
@@ -54,7 +54,6 @@
               <input
                 type="checkbox"
                 name="remember-me"
-                id="remember-me"
                 class="form-01__input"
               />
               <label
@@ -75,33 +74,46 @@
           </form>
         </section>
         <section class="section_02">
-          <form action="" class="form-02">
+          <form action="" class="form-02" name="form02" novalidate>
             <h2 class="form-02__title">Log in</h2>
             <fieldset class="form-02__fieldset">
-              <input
-                type="email"
-                name="usermail"
-                id="usermail"
-                class="form-02__input"
-                placeholder="Type your email here"
-                required
-                maxlength="40"
-              />
-              <input
-                type="password"
-                name="password"
-                id="password"
-                class="form-02__input"
-                placeholder="Type your password"
-                required
-              />
+              <label class="form-02__label">
+                <input
+                  type="email"
+                  name="usermail"
+                  class="form-02__input"
+                  placeholder="Type your email here"
+                  required
+                  maxlength="40"
+                />
+                <span class="form-02__input-error"></span>
+              </label>
+              <label class="form-02__label">
+                <input
+                  type="url"
+                  name="image_url"
+                  class="form-02__input"
+                  placeholder="Type image url here"
+                />
+                <span class="form-02__input-error">dfg</span>
+              </label>
+              <label class="form-02__label">
+                <input
+                  type="password"
+                  name="password"
+                  class="form-02__input"
+                  placeholder="Type your password"
+                  required
+                />
+                <span class="form-02__input-error">asdf</span>
+              </label>
             </fieldset>
             <fieldset class="form-02__fieldset">
               <input
                 type="checkbox"
                 name="remember-me"
                 id="remember-me"
-                class="form-02__input"
+                class="form-02__input_type_checkbox"
               />
               <label for="remember-me" class="form-02__label"
                 >Remember me</label
@@ -167,7 +179,66 @@
             </fieldset>
           </form>
         </section>
+        <section class="section_04">
+          <form action="" class="form-04" name="form04" novalidate>
+            <h2 class="form-04__title">Log in</h2>
+            <fieldset class="form-04__fieldset">
+              <label class="form-04__field">
+                <input
+                  type="email"
+                  name="usermail"
+                  class="form-04__input"
+                  placeholder="Type your mail here"
+                  required
+                />
+                <span class="form-04__input-error"></span>
+              </label>
+              <label class="form-04__field">
+                <input
+                  type="password"
+                  name="password"
+                  class="form-04__input"
+                  placeholder="Type your password"
+                  required
+                />
+                <span class="form-04__input-error"></span>
+              </label>
+            </fieldset>
+            <fieldset class="form-04__fieldset">
+              <label class="form-04__field form-04__field_type_row">
+                <input
+                  type="checkbox"
+                  name="remember-me"
+                  class="form-04__checkbox_type_hidden"
+                />
+                <span class="form-04__chekcbox_type_custom"></span>
+                <span class="form-04__label">Remember me</span>
+              </label>
+            </fieldset>
+            <fieldset class="form-04__fieldset form-04__fieldset_type_row">
+              <button type="submit" class="form-04__button">Log in</button>
+              <button
+                type="reset"
+                class="form-04__button form-04__button_type_nofill"
+              >
+                Reset
+              </button>
+            </fieldset>
+          </form>
+        </section>
       </main>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+        voluptatem natus error in totam distinctio, exercitationem aperiam
+        minima minus voluptas atque laudantium deserunt cumque! Ut incidunt
+        praesentium velit saepe at. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. At aut minus delectus veniam quae illum voluptatem
+        sapiente dolorem nesciunt exercitationem ea harum iusto, assumenda et
+        nihil. Vel quo beatae, tempore rerum sapiente fuga doloribus numquam!
+        Officia at tempora hic, numquam aut ut laudantium reprehenderit non
+        dolores in voluptas quibusdam cupiditate.
+      </p>
     </div>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
