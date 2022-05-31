@@ -3,7 +3,7 @@
   --grey-border-color: rgb(165, 165, 165);
 }
 
-.form-03 {
+.form {
   max-width: 400px;
   max-height: 600px;
   border-radius: 15px;
@@ -20,13 +20,13 @@
   color: black;
 }
 
-.form-03__title {
+.form__title {
   text-align: left;
   font-weight: 400;
   margin-bottom: 20px;
 }
 
-.form-03__fieldset {
+.form__fieldset {
   border: none;
   margin: 0;
   padding: 0;
@@ -35,36 +35,36 @@
   gap: 20px;
 }
 
-.form-03__fieldset_type_row {
+.form__fieldset_type_row {
   flex-flow: row nowrap;
   justify-content: left;
 }
 
-.form-03__input {
+.form__input {
   box-sizing: border-box;
   border: 1px solid var(--grey-border-color);
   padding: 20px;
   border-radius: 30px;
 }
 
-.form-03__input[type="checkbox"] {
+.form__input[type="checkbox"] {
   width: initial;
   min-width: 20px;
   min-height: 20px;
   vertical-align: middle;
 }
 
-.form-03__input::placeholder {
+.form__input::placeholder {
   color: rgb(204, 204, 204);
   font-size: 16px;
 }
 
-.form-03__input:focus {
+.form__input:focus {
   outline: var(--blue-acent-color) solid 1px;
   box-shadow: inset 0 0 10px 0 rgba(27, 113, 204, 0.1);
 }
 
-.form-03__field {
+.form__field {
   font-weight: 500;
   font-size: 14px;
   display: flex;
@@ -73,7 +73,7 @@
   position: relative;
 }
 
-.form-03__field_type_row {
+.form__field_type_row {
   display: flex;
   flex-flow: row;
   align-items: center;
@@ -82,11 +82,11 @@
 
 /* ========== custom checkbox ========== */
 
-.form-03__checkbox_type_hidden {
+.form__checkbox_type_hidden {
   display: none;
 }
 
-.form-03__chekcbox_type_custom {
+.form__chekcbox_type_custom {
   width: 20px;
   height: 20px;
   border: 1px solid var(--grey-border-color);
@@ -95,7 +95,7 @@
   position: relative;
 }
 
-.form-03__chekcbox_type_custom::before {
+.form__chekcbox_type_custom::before {
   content: "";
   height: 25px;
   width: 25px;
@@ -106,12 +106,12 @@
   transform: translate(-50%, -50%);
 }
 
-.form-03__checkbox_type_hidden:checked + .form-03__chekcbox_type_custom {
+.form__checkbox_type_hidden:checked + .form__chekcbox_type_custom {
   background: rgb(255, 255, 255);
 }
 
-.form-03__checkbox_type_hidden:checked
-  + .form-03__chekcbox_type_custom::before {
+.form__checkbox_type_hidden:checked
+  + .form__chekcbox_type_custom::before {
   -webkit-mask: url(../images/checkbox_v01.svg) center no-repeat;
   mask: url(../images/checkbox_v01.svg) center no-repeat;
   background-color: var(--blue-acent-color);
@@ -119,7 +119,7 @@
 
 /* =========== butoons =============== */
 
-.form-03__button {
+.form__button {
   background-color: var(--blue-acent-color);
   color: white;
   padding: 20px 30px;
@@ -129,13 +129,13 @@
   min-height: 50px;
 }
 
-.form-03__button:focus {
+.form__button:focus {
   outline: var(--blue-acent-color) solid 1px;
   background-color: transparent;
   color: var(--blue-acent-color);
 }
 
-.form-03__button_type_nofill {
+.form__button_type_nofill {
   background-color: transparent;
   color: var(--blue-acent-color);
 }

@@ -1,23 +1,20 @@
-const form = document.querySelector(".form-04");
-const formInputs = form.querySelectorAll(".form-04__input");
-
 function getErrorSpan(inputElem) {
   console.log(inputElem.nextElementSibling);
   return inputElem.nextElementSibling;
 }
 
 function showInputError(formElement, inputElement, errorMassage) {
-  inputElement.classList.add("form-04__input_type_error");
+  inputElement.classList.add("form__input_type_error");
   let errorSpan = getErrorSpan(inputElement);
   errorSpan.textContent = errorMassage;
-  errorSpan.classList.add("form-04__input-error_active");
+  errorSpan.classList.add("form__input-error_active");
 }
 
 function hideInputError(formElement, inputElement) {
-  inputElement.classList.remove("form-04__input_type_error");
+  inputElement.classList.remove("form__input_type_error");
   const errorSpan = getErrorSpan(inputElement);
   errorSpan.textContent = "";
-  errorSpan.classList.remove("form-04__input-error_active");
+  errorSpan.classList.remove("form__input-error_active");
 }
 
 function isValid(formElement, inputElement) {
@@ -27,7 +24,7 @@ function isValid(formElement, inputElement) {
 }
 
 function setEventListeners(formElement) {
-  inputList = formElement.querySelectorAll(".form-04__input");
+  inputList = formElement.querySelectorAll(".form__input");
   inputList.forEach((inputElement) => {
     console.log("hello");
     inputElement.forEach((input) => input.addEventListener("input", isValid));
@@ -35,9 +32,12 @@ function setEventListeners(formElement) {
 }
 
 function enableValidation() {
-  const formList = document.querySelectorAll(".form-04");
+  const formList = document.querySelectorAll(".form");
   formList.forEach((formElement) => {
-    formElement.addEventListener("submit", (evt) => evt.preventDefault());
+    formElement.addEventListener("submit", (evt) => {
+      evt.preventDefault();
+      console.log("prevent default");
+    });
     setEventListeners(formElement);
   });
 }

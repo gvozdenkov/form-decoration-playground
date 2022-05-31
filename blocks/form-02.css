@@ -2,7 +2,7 @@
   --blue-acent-color: rgb(27, 113, 204);
 }
 
-.form-02 {
+.form {
   max-width: 400px;
   max-height: 600px;
   border-radius: 15px;
@@ -15,13 +15,13 @@
   color: black;
 }
 
-.form-02__title {
+.form__title {
   text-align: left;
   font-weight: 400;
   margin-bottom: 30px;
 }
 
-.form-02__fieldset {
+.form__fieldset {
   border: none;
   margin: 0;
   padding: 0;
@@ -29,13 +29,13 @@
   position: relative;
 }
 
-.form-02__fieldset:last-child {
+.form__fieldset:last-child {
   margin-bottom: 0;
 }
 
 /* ============= input =============== */
 
-.form-02__input {
+.form__input {
   box-sizing: border-box;
   border: none;
   border-bottom: 1px solid rgb(165, 165, 165);
@@ -45,14 +45,14 @@
   font-size: initial;
 }
 
-.form-02__input:focus {
+.form__input:focus {
   /* border: none; */
   outline: none;
   box-sizing: border-box;
   /* border-bottom: 1px solid var(--blue-acent-color); */
 }
 
-.form-02__input_type_checkbox {
+.form__input_type_checkbox {
   width: initial;
   margin-bottom: 0;
   min-width: 20px;
@@ -60,22 +60,22 @@
   vertical-align: middle;
 }
 
-.form-02__input_type_checkbox:focus {
+.form__input_type_checkbox:focus {
   outline: var(--blue-acent-color) solid 1px;
 }
 
-.form-02__input:last-child {
+.form__input:last-child {
   margin-bottom: 0;
 }
 
-.form-02__input::placeholder {
+.form__input::placeholder {
   color: rgb(204, 204, 204);
   font-size: 16px;
 }
 
 /* ============= label =============== */
 
-.form-02__label {
+.form__label {
   display: inline;
   font-weight: 500;
   font-size: 14px;
@@ -87,7 +87,7 @@
 
 /* ============= button =============== */
 
-.form-02__button {
+.form__button {
   background-color: var(--blue-acent-color);
   color: white;
   padding: 20px 30px;
@@ -97,24 +97,24 @@
   min-height: 50px;
 }
 
-.form-02__button:focus {
+.form__button:focus {
   outline: var(--blue-acent-color) solid 1px;
   background-color: transparent;
   color: var(--blue-acent-color);
 }
 
-.form-02__button_type_nofill {
+.form__button_type_nofill {
   background-color: transparent;
   color: var(--blue-acent-color);
 }
 
 /* =========== validation =============== */
 
-.form-02__input_type_error {
+.form__input_type_error {
   border-bottom-color: red;
 }
 
-.form-02__input-error {
+.form__input-error {
   position: absolute;
   top: 40px;
   left: 25px;
@@ -126,6 +126,6 @@
   z-index: 1;
 }
 
-.form-02__input-error_active {
+.form__input-error_active {
   visibility: visible;
 }
