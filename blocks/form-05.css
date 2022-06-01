@@ -1,5 +1,67 @@
 :root {
   --blue-acent-color: rgb(27, 113, 204);
   --grey-border-color: rgb(165, 165, 165);
+  --backgroud-color: rgb(35, 35, 35);
+  --main-color: white;
+  --main-color-transp50: rgb(255 255 255 / 0.5);
 }
 
+.form {
+  display: flex;
+  flex-flow: column;
+}
+
+.form__set {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form__field {
+  display: flex;
+  flex-flow: column;
+  margin: 38px 0;
+  position: relative;
+}
+
+.form__field_type_row {
+  flex-flow: row;
+  gap: 10px;
+}
+
+/* ========= form__input ================ */
+
+.form__input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--main-color-transp50);
+  transition: all 0.2s ease-in;
+  color: var(--main-color);
+  padding-bottom: 6px;
+  font-weight: 400;
+}
+
+.form__input:hover {
+  border-bottom: 1px solid var(--main-color);
+}
+
+.form__input:focus {
+  outline: none;
+  border-bottom: 1px solid var(--main-color);
+}
+
+/* ========== form__placeholder =========== */
+
+.form__placeholder {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transition: all 0.3s ease-out;
+}
+
+.form__input:focus + .form__placeholder,
+.form__placeholder_is-fixed {
+  transform: translateY(-160%) scale(1);
+  font-size: 14px;
+}
